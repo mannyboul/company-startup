@@ -3,72 +3,122 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
   margin: 0;
+  padding: 0;
 }
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  margin: 0;
+  /* display: flex row; */
+  letter-spacing: .05rem;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Lato', sans-serif;
 }
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
+html, body {
   max-width: 100%;
-  display: block;
+  overflow-x: hidden;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
+
+/* HEADER */
+
+#logo {
+  justify-content: space-between;
+  display: flex;
+  padding: 1rem 2rem 1rem 2rem;
+  position: sticky;
+  top:0;
+  z-index: 9999;
+  background-color: white;
+
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+.menu {
+  height: 44px;
+  width: auto;
+}
+
+/* HERO START */
+
+
+.hero {
+  background: url("/img/hero.jpg") no-repeat;
+  background-size: 200%;
+  background-position: bottom;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay * {
+  text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.hero-p {
+  font-size: 20px;
+  padding: 2rem 3rem;
+  line-height: 1.8rem;
+}
+
+.cred {
+  font-size: 20px;
+  color: white;
+}
+
+.credit-a  {
+  color: white;
+}
+
+.hero-btn {
+  border: solid 3px rgb(255, 255, 255);
+  padding: 1.7rem 4rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+
+.hero-btn:hover {
+  background: white;
+  color: black;
+}
+/* DIVISIONS */
+
+
+main {
+  padding: 3.5rem 3rem 0 3rem;
+}
+
+#h2-1 {
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+.div-disc {
+  color: rgb(136, 136, 136);
+  line-height: 2rem;
+}
+.div-btn {
+  border: solid 3px rgb(0, 0, 0);
+  padding: 1.7rem 4rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+
+.div-btn:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
