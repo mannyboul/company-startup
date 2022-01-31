@@ -106,10 +106,10 @@ main {
   font-weight: 400;
   margin-bottom: 2.5rem;
 }
-
 .div-disc {
   color: rgb(136, 136, 136);
   line-height: 2rem;
+  margin-bottom: 5rem;
 }
 .div-btn {
   border: solid 3px rgb(0, 0, 0);
@@ -117,8 +117,90 @@ main {
   border-radius: 10px;
   margin-top: 3rem;
 }
-
 .div-btn:hover {
   background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
+.company-disc {
+  display: flex row;
+}
+.div-img {
+  height: 44px;
+  width: 44px;
+}
+.img-wrapper {
+  display: flex;
+  width: 88px;
+  height: 88px;
+  background: #B3B3B3;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.three {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.div1 {
+  margin-top: 7rem;
+}
+
+
+/* SEPARATOR */
+
+.blue {
+  height: 178px;
+  width: 200%;
+  margin-left: -3rem;
+  background-color: #313ee7;
+}
+
+
+/* QUALITY SECTION */
+
+
+.services {
+  position: relative;
+}
+
+.services-disc {
+  margin-top: 360px;
+  display: flex row;
+  text-align: center;
+}
+
+.pic1 {
+  display: flex;
+  width: 318px;
+  height: 396px;
+  align-self: center;
+  align-content: center; 
+  position: absolute;
+  top: 110px;
+}
+
+#h2-2 {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 400;
+}
+.serv-p {
+  text-align: center;
+  color: black;
+  line-height: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+.credit-serv {
+  margin-top: 5rem;
+}
+
+
+/* ABOUT US */
+
